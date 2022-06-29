@@ -16,7 +16,7 @@ app.get("/",(req,res)=>{
 
 
 
-app.use(express.json());
+app.use(express.json() );
 app.use(UserRouter);
 app.use(errorServer)
 app.use('*',error404)
